@@ -4,7 +4,8 @@
 
 body {
     display: grid;
-    grid-template-rows: 1 1 1;
+    grid-template-rows: auto 1 auto;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
@@ -34,6 +35,15 @@ main {
     align-items: center;
 }
 
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: solid 1px black;
+    padding: 10px;
+}
+
 footer div {
     margin: 0px;
     padding-top: 10px;
@@ -60,8 +70,10 @@ input {
 
 #addTask {
     padding: 3px 8px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: solid 1px black;
     color: #f4f4f4;
     background-color: #0074d9;
-    border-style: none;
     margin-bottom: 50px;
 }
