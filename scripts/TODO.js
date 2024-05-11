@@ -7,7 +7,7 @@ window.onload = function () {
     let listaTarefas = JSON.parse(localStorage.getItem('TODO')) || { tasks: [] };
     for (let i = 0; i < listaTarefas.tasks.length; i++) {
         let a = document.createElement("p");
-        a.innerHTML = `${i + 1}. TÃ­tulo: <strong> ${listaTarefas.tasks[i].titulo} </strong> - DescriÃ§Ã£o: ${listaTarefas.tasks[i].descricao} `
+        a.innerHTML = `${i + 1}. Titulo: <strong> ${listaTarefas.tasks[i].titulo} </strong> - Descricao : ${listaTarefas.tasks[i].descricao} `
         document.querySelector("main").appendChild(a);
     }
 
@@ -18,7 +18,7 @@ window.onload = function () {
         if (titulo !== '' && descricao !== '') {
             let exists = listaTarefas.tasks.some(task => task.titulo === titulo && task.descricao === descricao);
             if (exists) {
-                alert('Esta tarefa jÃ¡ existe!');
+                alert('Esta tarefa ja¡ existe!');
                 return;
             }
 
@@ -39,7 +39,7 @@ window.onload = function () {
             //depois adiciona a lista de tarefas atualizada
             for (let i = 0; i < listaTarefas.tasks.length; i++) {
                 let a = document.createElement("p");
-                a.innerHTML = `${i + 1}. TÃ­tulo: <strong> ${listaTarefas.tasks[i].titulo} </strong> - DescriÃ§Ã£o: ${listaTarefas.tasks[i].descricao} `
+                a.innerHTML = `${i + 1}. Titulo: <strong> ${listaTarefas.tasks[i].titulo} </strong> - Descricao : ${listaTarefas.tasks[i].descricao} `
                 document.querySelector("main").appendChild(a);
             }
         }
