@@ -28,7 +28,7 @@ function addInfoDataAcesso() {
     contVisitas.n++;
   }
 
-  p.textContent = `Esta pÃ¡gina foi visitada ${contVisitas.n} vezes. A Ãºltima visita foi: ${data}`
+  p.textContent = `Esta pagina foi visitada ${contVisitas.n} vezes. A ulvisita foi: ${data}`
 
   document.querySelector("footer#rodape").appendChild(p);
 
